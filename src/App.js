@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
+
+const Layout = lazy(() => import('./Layout/Layout'));
+const Home = lazy(() => import('./Pages/Home'));
+const About = lazy(() => import('./Pages/About'));
+const ToDo = lazy(() => import('./Pages/To-Do'));
+const NotFound = lazy(() => import('./Pages/NotFound'));
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/to-do" element={<ToDo />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<Navigate to="/404" replace />} />
+          <Route path="/404" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </Suspense>
   );
 }
 

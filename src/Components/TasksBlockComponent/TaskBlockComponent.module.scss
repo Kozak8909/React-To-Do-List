@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin: calc(50vh - 242px);
+  margin-bottom: 0;
+
+  &__button {
+    width: 300px;
+    height: 150px;
+    background-color: #5a8f8f;
+    color: white;
+    font-size: 32px;
+    border: 1px solid rgb(74, 74, 74);
+    border-radius: 10px;
+  }
+
+  &__title {
+    color: #d7855d;
+  }
+}

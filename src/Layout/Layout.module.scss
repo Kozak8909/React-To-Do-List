@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.link {
+  color: white;
+}
+
+.Layout {
+  text-align: center;
+  background-image: linear-gradient(to bottom, white, papayawhip);
+  height: 100vh;
+
+  &__header {
+    padding: 20px;
+    background-color: rgb(39, 30, 14);
+  }
+
+  &__ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__main {
+    margin-top: 42px;
+    display: flex;
+    flex-direction: column;
+  }
+}
