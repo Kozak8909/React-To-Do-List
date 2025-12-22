@@ -1,0 +1,18 @@
+@use "../../scss/variables";
+@use "../../scss/form_elements";
+@use "../../scss/button";
+
+.input {
+  padding: 10px;
+}
+
+.Input__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.button {
+  width: 240px;
+  height: 40px;
+}

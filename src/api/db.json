@@ -1,3 +1,46 @@
 {
-  "to-do's": []
+  "to-do's": [
+    {
+      "id": "5070",
+      "taskName": "loxTask",
+      "taskDesc": "task for lox",
+      "isDone": false
+    },
+    {
+      "id": "68d6",
+      "taskName": "liuygf",
+      "taskDesc": "kjhgf",
+      "isDone": false
+    },
+    {
+      "id": "7d20",
+      "taskName": "Clean the room",
+      "taskDesc": "",
+      "isDone": false
+    },
+    {
+      "id": "5881",
+      "taskName": "Wash the dishes",
+      "taskDesc": "",
+      "isDone": false
+    },
+    {
+      "id": "5f44",
+      "taskName": "Go shopping",
+      "taskDesc": "",
+      "isDone": false
+    }
+  ],
+  "auth": [
+    {
+      "email": "lox@gmail.com",
+      "password": "loxpassword",
+      "id": "2f0e"
+    },
+    {
+      "id": "85a6",
+      "email": "lox228@gmail.com",
+      "password": "lox228password"
+    }
+  ]
 }

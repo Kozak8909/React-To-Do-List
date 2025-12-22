@@ -1,32 +1,29 @@
+@use "../scss/variables";
+@use "../scss/links.scss";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.link {
-  color: white;
+body {
+  font-family: Roboto, sans-serif;
 }
 
 .Layout {
-  text-align: center;
-  background-image: linear-gradient(to bottom, white, papayawhip);
-  height: 100vh;
+  background-color: var(--background-main-color);
 
   &__header {
+    background-color: var(--background-card-color);
     padding: 20px;
-    background-color: rgb(39, 30, 14);
+    position: sticky;
+    top: 0;
   }
 
   &__ul {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-  }
-
-  &__main {
-    margin-top: 42px;
-    display: flex;
-    flex-direction: column;
   }
 }

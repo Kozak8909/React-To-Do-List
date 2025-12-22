@@ -1,0 +1,36 @@
+@use "../../scss/button";
+@use "../../scss/form_elements";
+
+.label {
+  font-size: 18px;
+}
+
+.button {
+  margin: 0;
+  padding: 5px;
+  font-size: 16px;
+
+  &.delete {
+    background-color: #ed3c3c;
+  }
+}
+
+.ListItem {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 6px;
+
+  &__task_container {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__button_container {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+  }
+}

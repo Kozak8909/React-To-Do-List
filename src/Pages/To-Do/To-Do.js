@@ -1,4 +1,4 @@
-import TaskBlockComponent from "../Components/TasksBlockComponent/TasksBlockComponent";
+import TaskBlockComponent from "../../Components/TasksBlockComponent/TasksBlockComponent";
 
 const To_Do = () => {
     return (

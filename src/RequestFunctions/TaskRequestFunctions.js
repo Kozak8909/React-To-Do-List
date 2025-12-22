@@ -2,6 +2,11 @@ import axios from 'axios';
 
 axios.defaults.baseURL = "http://localhost:3030/";
 
+export const fetchTasks = async (url) => {
+    const response = await axios.get(url);
+    return response.data;
+}
+
 export const fetchTask = async (url) => {
     const response = await axios.get(url);
     return response.data;

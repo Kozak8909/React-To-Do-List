@@ -1,0 +1,17 @@
+@use "../../scss/variables";
+@use "../../scss/button";
+@use "../../scss/form_elements";
+
+.input {
+  padding: 6px;
+}
+
+.SearchBlock {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &__label {
+    font-size: 16px;
+  }
+}

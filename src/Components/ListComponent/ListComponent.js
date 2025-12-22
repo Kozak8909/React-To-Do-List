@@ -1,4 +1,7 @@
+import { ThreeDots } from "react-loader-spinner";
 import ListItemComponent from "../ListItemComponent/ListItemComponent";
+
+import styles from "./ListComponent.module.scss";
 
 const ListComponent = ({ filter, taskName, data, isFetching }) => {
     const getFilteredList = (filter, name) => {
@@ -26,13 +29,13 @@ const ListComponent = ({ filter, taskName, data, isFetching }) => {
     }
 
     return (
-        <>
-            {isFetching ? <p>Loading...</p> :
-                <ul>
+        <div className={styles.ListComponent}>
+            {isFetching ? <ThreeDots color="gray" /> :
+                <ul id="List" className={styles.ListComponent__list}>
                     {listRender()}
                 </ul>
             }
-        </>
+        </div>
     );
 }
 

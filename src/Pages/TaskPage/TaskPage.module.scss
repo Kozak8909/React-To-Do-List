@@ -1,0 +1,50 @@
+@use "../../scss/variables";
+@use "../../scss/form_elements";
+
+.TaskPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-main-color);
+  height: calc(100vh - 60px);
+
+  &__container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: var(--background-card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    width: 800px;
+    height: 600px;
+  }
+
+  &__button {
+    border: none;
+    fill: var(--text-secondary-color);
+    background-color: var(--background-card-color);
+    align-items: center;
+  }
+
+  &__info_container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__title {
+    position: relative;
+    font-size: 48px;
+    color: var(--text-main-color);
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 150%;
+      border: 1px solid var(--border-color);
+      bottom: -20px;
+      left: 0;
+    }
+  }
+}

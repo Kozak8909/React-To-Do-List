@@ -1,3 +1,5 @@
+import styles from "./SearchComponent.module.scss";
+
 const SearchComponent = ({ filter, setFilter, taskNameFilter, setTaskNameFilter }) => {
     const selectOptions = [
         { id: 1, value: "All" },
@@ -16,18 +18,18 @@ const SearchComponent = ({ filter, setFilter, taskNameFilter, setTaskNameFilter 
     }
 
     return (
-        <>
-            <label htmlFor="input-search">
+        <div className={styles.SearchBlock}>
+            <label className={styles.SearchBlock__label} htmlFor="input-search">
                 Search:
             </label>
-            <input name="input-search" id="input-search" type="text" placeholder="Task name" value={taskNameFilter} onChange={onChangeSearchHandler} />
-            <label htmlFor="filter-select">
+            <input className={styles.input} name="input-search" id="input-search" type="text" placeholder="Task name" value={taskNameFilter} onChange={onChangeSearchHandler} />
+            <label className={styles.SearchBlock__label} htmlFor="filter-select">
                 Filter:
             </label>
-            <select name="filter-select" id="filter-select" value={filter} onChange={onChangeFilterHandler}>
+            <select className={styles.select} name="filter-select" id="filter-select" value={filter} onChange={onChangeFilterHandler}>
                 {selectOptions.map(option => <option key={option.id}>{option.value}</option>)}
             </select>
-        </>
+        </div>
     );
 }
 

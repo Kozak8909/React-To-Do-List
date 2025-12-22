@@ -1,0 +1,37 @@
+@use "../../scss/variables";
+@use "../../scss/form_elements";
+@use "../../scss/button";
+
+.Register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-main-color);
+  height: calc(100vh - 60px);
+
+  &__form_container {
+    background-color: var(--background-card-color);
+    padding: 40px;
+    margin: 0 auto;
+    margin-top: 16px;
+    width: 380px;
+    border-radius: 16px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__link {
+    color: var(--primary-color);
+  }
+}
+
+.button {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 16px;
+}
