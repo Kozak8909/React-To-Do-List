@@ -23,10 +23,13 @@ Although it may look simple, it includes many important React patterns and gener
 - Uniform layout
 - Clean structure
 - Moduled styling
+- Authorization (simulated)
+- Private routes
+- State managment (redux)
 
 ## Features
 
-- Add and delete tasks
+- Add , edit and delete tasks
 - Mark tasks as done / in progress
 - Search tasks by name
 - Filter tasks by status
@@ -35,11 +38,8 @@ Although it may look simple, it includes many important React patterns and gener
 
 ## To be done
 
-- Home and about pages
-- Possibility to edit tasks
+- About page
 - Input validation
-- Private routes (authentication simulation)
-- Global state managment (Redux)
 - UI imporvements
 - Pagination for large lists
 
@@ -47,8 +47,8 @@ Although it may look simple, it includes many important React patterns and gener
 
 - GET /to-do's fetch all tasks
 - POST /to-do's create new task
-- PATCH /to-do's/:id update the task (ready to be implemented soon)
-- DELETE /to0do's/:id delete the task
+- PATCH /to-do's/:id update the task
+- DELETE /to-do's/:id delete the task
 
 ## Installation
 
